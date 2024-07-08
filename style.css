@@ -5,14 +5,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
-html{
+
+html {
     cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
-  }
+}
+
 body {
     background: url(assests/body.jpeg) no-repeat center fixed;
     background-size: cover;
 
 }
+
+/* *******Navbar******** */
 
 .header {
     height: 80px;
@@ -29,21 +33,29 @@ body {
 
 }
 
-.links{
-    margin-right:60px;
+.links {
+    margin-right: 60px;
+}
+.links-mob{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
 }
 
-.links a{
+.links a , .links-mob a{
     margin-left: 15px;
     color: black;
     font-weight: 800;
     font-size: 1.2rem;
 }
 
-.download{
+.download-btn {
     background-color: rgb(251, 154, 18);
-    padding: 15px;
-    border-radius: 15px;}
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
 
 .logo {
     height: 100px;
@@ -53,7 +65,12 @@ body {
     translate: 0 -26px;
 
 }
-.main{
+
+
+
+
+/* *******Body****** */
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +79,7 @@ body {
 }
 
 
-.boxes{
+.boxes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +87,7 @@ body {
 
 }
 
-.main h1{
+h1 {
     width: 85%;
     text-align: center;
     color: #fff;
@@ -79,19 +96,20 @@ body {
     border-radius: 35px;
     padding: 20px;
 }
+
 .box {
     height: 500px;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 50px;
-    margin: 50px 15px ;
+    margin: 50px 15px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2), -4px -4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.intro{
+.intro {
     height: 200px;
-    width: 80%;
+    width: 85%;
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -99,8 +117,92 @@ body {
     padding: 50px;
     color: white;
     font-size: 1.5rem;
-    
+
 }
+
+/* *******Download******* */
+
+.download{
+    width: 85%;
+    backdrop-filter: blur(100px);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.download a{
+    margin: 15px;
+    color: black;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.two{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid rgb(165, 165, 165);
+    background-color: rgb(251, 154, 18);
+    text-align: center;
+}
+
+
+/* *****Gameplay****** */
+
+.gameplay-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.video-card {
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gameplay-features {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.gameplay-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gameplay-features li {
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* ******Tips***** */
+.tip {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #1e90ff;
+}
+
+.tip h3 {
+    margin-top: 0;
+}
+
+
+/* ******Footer****** */
 .footer {
     height: max-content;
     background-color: rgba(0, 0, 0, 0.7);
@@ -115,30 +217,70 @@ body {
     padding: 20px;
 }
 
-.footer a{
+.footer a {
     color: white;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
 }
 
- 
-
-.link-box{
+.link-box {
     display: flex;
     flex-direction: column;
-    margin:0 100px;
+    margin: 0 100px;
 }
 
-.link-box h4{
+.link-box h4 {
     font-size: 1.3rem;
 }
-.link-box a{
-   margin-top: 5px;
+
+.link-box a {
+    margin-top: 5px;
 }
 
-.copyright, .btt{
+.copyright,
+.btt {
     margin: 15px 0;
 }
 
+
+
+
+
+
+/* ******MEDIA QUERIES******* */
+
+@media only screen and (max-width: 1000px) {
+    .links{
+        display: none;
+    }
+
+    .links-mob{
+        display: flex;
+    }
+
+    .intro{
+        height: max-content;
+    }
+
+
+
+    .download{
+        flex-direction: column;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .link-box {
+        margin: 20px;
+    }
+
+    .footer p{
+        text-align: center;
+    }
+
+
+
+}
