@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Legends Bang Bang</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.ico">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                 <a href="#about">ABOUT</a>
             </div>
             <div class="links-mob">
-                <a class="download-btn" href="#download">DOWNLAOD</a>
+                <a class="download-btn" href="#download">DOWNLOAD</a>
                 <a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
                         viewBox="0 -960 960 960" width="26px" fill="#000000">
                         <path d="M86-191v-126h788v126H86Zm0-226v-126h788v126H86Zm0-226v-126h788v126H86Z" />
@@ -262,6 +263,7 @@
             <div class="box fav">
                 <img src="assests/Ixia_29.webp" alt="Ixia">
                 <h2>Ixia</h2>
+                <br>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Burst Damage, Mobility</p>
                 <p><strong>Ultimate:</strong> Full Barrage</p>
@@ -269,6 +271,7 @@
             <div class="box fav">
                 <img src="assests/Hanabi_29.webp" alt="Hanabi">
                 <h2>Hanabi</h2>
+                <br>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Crowd Control, Damage</p>
                 <p><strong>Ultimate:</strong> Forbidden Jutsu</p>
@@ -276,6 +279,7 @@
             <div class="box fav">
                 <img src="assests/Layla_29.webp" alt="Layla">
                 <h2>Layla</h2>
+                <br>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Long Range, Damage</p>
                 <p><strong>Ultimate:</strong> Destruction Rush</p>
@@ -323,23 +327,29 @@
         <!-- ******Gallery******* -->
         <h1 id="gallery">Gallery</h1>
         <div class="carousel-container">
-  <div class="carousel-view">
-    <button id="prev-btn" class="prev-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M436-39-6-480l442-442 109 110-332 332 332 332L436-39Z"/></svg>
-    </button>
-    <div id="item-list" class="item-list">
-         <img id="item" class="item" src="assests/assassin.webp"/>
-         <img id="item" class="item" src="assests/mage.webp"/>
-         <img id="item" class="item" src="assests/mm.webp"/>
-         <img id="item" class="item" src="assests/support.webp"/>
-         <img id="item" class="item" src="assests/tank.webp"/>
+            <div class="carousel-view">
+                <button id="prev-btn" class="prev-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path d="M436-39-6-480l442-442 109 110-332 332 332 332L436-39Z" />
+                    </svg>
+                </button>
+                <div id="item-list" class="item-list">
+                    <img id="item" class="item" src="assests/assassin.webp" />
+                    <img id="item" class="item" src="assests/mage.webp" />
+                    <img id="item" class="item" src="assests/mm.webp" />
+                    <img id="item" class="item" src="assests/support.webp" />
+                    <img id="item" class="item" src="assests/tank.webp" />
+                </div>
+                <button id="next-btn" class="next-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z" />
+                    </svg>
+                </button>
+            </div>
         </div>
-    <button id="next-btn" class="next-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z"/></svg>
-        </button>
-    </div>
-</div>
-        
+
 
         <!-- ******About******* -->
         <h1 id="about">About
@@ -419,7 +429,9 @@
             </div>
 
         </div>
+
         <embed src="/assests/bgm.mp3" loop="true" autostart="true" hidden="true">
+
         <h4 class="copyright">&copy; 2024 Made with ❤️ By Dinesh</h4>
         <p> Disclaimer: This is a fan site and is not affiliated with or endorsed by Moonton.</p>
         <a href="#top" class="btt">Back to Top</a>
