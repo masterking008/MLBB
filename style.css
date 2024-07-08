@@ -41,7 +41,7 @@ body {
     display: none;
     align-items: center;
     justify-content: center;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 .links a,
@@ -68,6 +68,33 @@ body {
 
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(244, 244, 244, 0.797);
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    width: 100vw;
+    backdrop-filter: blur(50px);
+}
+
+.sidebar a {
+    color: black;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #fff;
+}
 
 
 
@@ -86,6 +113,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 
 }
 
@@ -125,10 +153,10 @@ h1 {
     padding: 50px;
     color: white;
     font-size: 1.5rem;
-
+    text-align: center;
 }
 
-.cont{
+.cont {
     width: 85vw;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(100px);
@@ -142,7 +170,7 @@ h1 {
     padding: 50px;
     margin: 50px 15px;
 
-    
+
 }
 
 
@@ -152,7 +180,7 @@ h1 {
     width: 85%;
     height: 280px;
     color: white;
-   padding: 25px;
+    padding: 25px;
     backdrop-filter: blur(100px);
     display: flex;
     align-items: center;
@@ -167,16 +195,20 @@ h1 {
     font-size: 1.2rem;
 }
 
-.download h2, .download p {
+.download h2,
+.download p {
     margin: 10px;
 }
+
 .download h2 {
     font-size: 1.7rem;
 }
+
 .download p {
     font-size: 1.2rem;
     text-align: center;
 }
+
 .btns {
     display: flex;
     align-items: center;
@@ -193,74 +225,167 @@ h1 {
 
 
 /* *****Gameplay****** */
-
-
-.gameplay-videos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0;
+.gameplay {
+    font-size: 1.2rem;
 }
 
-.video-card {
-    margin: 10px;
-    flex: 1;
-    min-width: 300px;
-    max-width: 300px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    text-align: center;
-}
-
-.video-card video {
-    width: 100%;
-    border-radius: 8px;
+iframe {
+    margin: 25px;
+    width: 700px;
+    height: 400px;
 }
 
 .gameplay-features {
-    text-align: left;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-.gameplay-features ul {
-    list-style: none;
-    padding: 0;
-}
-
-.gameplay-features li {
-    background-size: 20px;
-    padding-left: 30px;
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.inside{
+.inside {
     background-color: #ffffff00;
 }
+
+.modes img {
+    height: 200px;
+}
+
+.modes {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 /* ******Tips***** */
-.tip {
-    margin-bottom: 20px;
-    padding: 15px;
-}
 
-.tip h3 {
-    margin-top: 0;
-}
-
-
-/* ******About***** */
-.about{
+.tips {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.abt{
+.tip {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+
+}
+
+/* ******Heros***** */
+.heros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.herosimg {
+    width: 85%;
+    height: 600px;
+    background: url(assests/heros.jpg) no-repeat bottom;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.hero-type img {
+    width: 350px;
+    border-radius: 30px;
+}
+
+.hero-type {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    height: max-content;
+
+}
+
+
+
+.intro2 {
+    width: 65%;
+    margin: 25px;
+    height: auto;
+    border-radius: 35px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.fav img {
+    height: 200px;
+    border-radius: 25px;
+}
+
+.fav {
+    justify-content: space-between;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+/* ******Gallery***** */
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-container {
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(60px);
+    border-radius: 35px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+    max-width: 950px;
+    padding: 50px 10px;
+    display: flex;
+    gap: 48px;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.prev-btn, .next-btn  {
+    cursor: pointer;
+}
+
+.item {
+    scroll-snap-align: center;
+    height: 490px;
+    border-radius: 25px;
+}
+
+/* ******About***** */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mini {
     height: 300px;
     width: 300px;
     text-align: center;
+    margin-top: 30px;
 
 }
 
@@ -331,7 +456,7 @@ h1 {
         margin: 25px;
     }
 
-    .cont{
+    .cont {
         margin: 25px;
     }
 
@@ -355,6 +480,19 @@ h1 {
         text-align: center;
     }
 
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
 
+    .item-list{
+        width: 300px;
+    }
+    .item{
+        height: 160px;
+    }
 
+    .prev-btn, .next-btn  {
+        display: none;
+    }
 }

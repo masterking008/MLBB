@@ -14,24 +14,112 @@
         <div class="navbar">
             <div class="logo"></div>
             <div class="links">
-                <a class="download-btn" href="#download">Download Now</a>
+                <a class="download-btn" href="#download">DOWNLOAD</a>
                 <a href="">HOME</a>
                 <a href="#gameplay">GAMEPLAY</a>
                 <a href="#heros">HEROS</a>
                 <a href="#tips">TIPS</a>
-                <a href="#quiz">QUIZ</a>
+                <a href="#gallery">GALLERY</a>
                 <a href="#about">ABOUT</a>
             </div>
             <div class="links-mob">
-                <a class="download-btn" href="#download">Download Now</a>
+                <a class="download-btn" href="#download">DOWNLAOD</a>
+                <a onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="#000000">
+                        <path d="M86-191v-126h788v126H86Zm0-226v-126h788v126H86Zm0-226v-126h788v126H86Z" />
+                    </svg></a>
             </div>
         </div>
+    </div>
+    <div class="sidebar">
+        <a onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#000000">
+                <path
+                    d="m256-168-88-88 224-224-224-224 88-88 224 224 224-224 88 88-224 224 224 224-88 88-224-224-224 224Z" />
+            </svg></a>
+        <a onclick="hideSidebar()" href="">HOME</a>
+        <a onclick="hideSidebar()" href="#gameplay">GAMEPLAY</a>
+        <a onclick="hideSidebar()" href="#heros">HEROS</a>
+        <a onclick="hideSidebar()" href="#tips">TIPS</a>
+        <a onclick="hideSidebar()" href="#gallery">GALLERY</a>
+        <a onclick="hideSidebar()" href="#about">ABOUT</a>
     </div>
     <div class="main">
         <div class="intro box">
             <p>Welcome to your ultimate Mobile Legends: Bang Bang fan site! Find hero guides, latest news, community
                 highlights, and stay updated with all things MLBB. Join us and enhance your gaming experience!</p>
         </div>
+
+
+
+
+        <!-- ******Gameplay******* -->
+        <h1 id="gameplay">Gameplay</h1>
+        <div class="gameplay cont">
+            <p>Experience the thrilling and fast-paced battles in Mobile Legends: Bang Bang. Choose your heroes and dive
+                into 5v5 combat!</p>
+
+
+            <div class="gameplay-features">
+                <h3>Features</h3>
+                <ul>
+                    <li>5v5 Battles against real opponents</li>
+                    <li>Multiple heroes with unique abilities</li>
+                    <li>Fast matchmaking</li>
+                    <li>Team strategies and tactics</li>
+                    <li>Stunning graphics and smooth controls</li>
+                </ul>
+            </div>
+            <iframe src="https://www.youtube.com/embed/MxyhKUqqlYw"
+                title="SAVAGE!! 100% Brutal Damage Top Global IXIA New Best Build and Emblem 2024 - MLBB"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="box intro2">
+            <h2>Battle Modes</h2>
+
+        </div>
+
+        <div class="boxes">
+            <div class="box modes">
+                <img src="assests/Ranked.webp" alt="Ranked">
+                <h2>Ranked</h2>
+                <p><strong>Description:</strong> A competitive mode where players earn ranks based on performance.</p>
+                <ul>
+                    <li>Draft Pick</li>
+                    <li>Ban/Pick System</li>
+                    <li>Competitive Matchmaking</li>
+                </ul>
+                <p><strong>Strategy:</strong> Focus on teamwork, hero synergy, and objective control.</p>
+            </div>
+            <div class="box modes">
+                <img src="assests/Classic.webp" alt="Classic">
+                <h2>Classic</h2>
+                <p><strong>Description:</strong> Standard gameplay mode for casual matches.</p>
+                <ul>
+                    <li>Quick Matchmaking</li>
+                    <li>All Heroes Available</li>
+                    <li>No Rank Points</li>
+                </ul>
+                <p><strong>Strategy:</strong> Practice hero mechanics, experiment with builds, and have fun.</p>
+            </div>
+            <div class="box modes">
+                <img src="assests/Brawl.webp" alt="Brawl">
+                <h2>Brawl</h2>
+                <p><strong>Description:</strong> Fast-paced mode with random hero selection.</p>
+                <ul>
+                    <li>One Lane</li>
+                    <li>Two Random Heroes</li>
+                    <li>Short Matches</li>
+                </ul>
+                <p><strong>Strategy:</strong> Adapt quickly to random heroes and team compositions.</p>
+            </div>
+        </div>
+
+
+
 
         <!-- ******Download******** -->
         <h1 id="download">Download Mobile Legends: Bang Bang</h1>
@@ -51,24 +139,142 @@
 
         </div>
 
+        <!-- ******Heros******* -->
+        <h1 id="heros">Heros</h1>
+        <div class="box intro">
+            <p>Mobile Legends: Bang Bang features over 100 heroes, each with unique abilities and roles. These heroes
+                are categorized into six main types, each fulfilling specific functions in the game.</p>
+
+
+        </div>
+        <div class="herosimg box">
+            .
+        </div>
+        <div class="box intro2">
+            <h2>Types of Heroes</h2>
+
+        </div>
+
+        <div class="heros">
+
+
+
+            <div class="box hero-type">
+                <img src="assests/tank.webp" alt="Tank">
+                <h2>
+                    Tank:
+                </h2>
+                <br>
+                <p> Tanks are durable front-line warriors designed to absorb damage and protect their team.
+                    They
+                    usually have high health and defensive stats.</p>
+                <br>
+                <p> Examples: Tigreal, Akai, Johnson</p>
+
+
+            </div>
+            <div class="box hero-type">
+                <img src="assests/fighter.webp" alt="Fighter">
+                <h2>
+                    Fighter:
+                </h2>
+                <br>
+                <p>
+                    Fighters are versatile melee heroes that balance damage and durability. They can engage in
+                    sustained fights and often deal significant damage while being able to take some hits.
+                </p>
+                <br>
+                <p>
+                    Examples: Alucard, Balmond, Ruby
+                </p>
+            </div>
+            <div class="box hero-type">
+                <img src="assests/assassin.webp" alt="Assassin">
+                <h2>
+                    Assassin:
+                </h2>
+                <br>
+                <p>
+                    Assassins specialize in dealing high burst damage to quickly eliminate key enemy targets.
+                    They
+                    have high mobility but are typically less durable.
+                </p>
+                <br>
+                <p>
+                    Examples: Fanny, Lancelot, Natalia
+                </p>
+            </div>
+            <div class="box hero-type">
+                <img src="assests/mm.webp" alt="Marksman">
+                <h2>
+                    Marksman:
+                </h2>
+                <br>
+                <p>
+                    Marksmen are ranged damage dealers who excel in dealing consistent physical damage from a
+                    distance. They are crucial for taking down objectives and enemies but need protection due to their
+                    fragility.
+                </p>
+                <br>
+                <p>
+                    Examples: Layla, Ixia, Miya
+                </p>
+            </div>
+            <div class="box hero-type">
+                <img src="assests/mage.webp" alt="Mage">
+                <h2>
+                    Mage:
+                </h2>
+                <br>
+                <p>
+                    Mages deal high burst magic damage and often have crowd control abilities. They are
+                    effective
+                    at
+                    controlling fights and dealing damage from a distance but are usually fragile.
+                </p>
+                <br>
+                <p>
+                    Examples: Eudora, Kagura, Alice
+                </p>
+            </div>
+            <div class="box hero-type">
+                <img src="assests/support.webp" alt="Support">
+                <h2>
+                    Support:
+                </h2>
+                <br>
+                <p>
+                    Supports provide healing, buffs, and crowd control to aid their team. They play a crucial
+                    role
+                    in
+                    sustaining the team and providing utility in fights.
+                </p>
+                <br>
+                <p>
+                    Examples: Rafaela, Estes, Angela
+                </p>
+            </div>
+
+        </div>
+
         <h1>My Favorite Heroes</h1>
         <div class="boxes">
-            <div class="box">
-                <img src="ixia.jpg" alt="Ixia">
+            <div class="box fav">
+                <img src="assests/Ixia_29.webp" alt="Ixia">
                 <h2>Ixia</h2>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Burst Damage, Mobility</p>
                 <p><strong>Ultimate:</strong> Full Barrage</p>
             </div>
-            <div class="box">
-                <img src="hanabi.jpg" alt="Hanabi">
+            <div class="box fav">
+                <img src="assests/Hanabi_29.webp" alt="Hanabi">
                 <h2>Hanabi</h2>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Crowd Control, Damage</p>
                 <p><strong>Ultimate:</strong> Forbidden Jutsu</p>
             </div>
-            <div class="box">
-                <img src="layla.jpg" alt="Layla">
+            <div class="box fav">
+                <img src="assests/Layla_29.webp" alt="Layla">
                 <h2>Layla</h2>
                 <p><strong>Role:</strong> Marksman</p>
                 <p><strong>Specialty:</strong> Long Range, Damage</p>
@@ -77,123 +283,34 @@
         </div>
 
 
-        <!-- ******Gameplay******* -->
-        <h1 id="gameplay">Gameplay</h1>
-        <div class="gameplay cont">
-            <p>Experience the thrilling and fast-paced battles in Mobile Legends: Bang Bang. Choose your heroes and dive
-                into 5v5 combat!</p>
-            <div class="gameplay-videos">
-                <div class="video-card">
-                    <video controls>
-                        <source src="videos/gameplay1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Epic Team Fights</p>
-                </div>
-                <div class="video-card">
-                    <video controls>
-                        <source src="videos/gameplay2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Strategic Plays</p>
-                </div>
-                <div class="video-card">
-                    <video controls>
-                        <source src="videos/gameplay3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Hero Showcases</p>
-                </div>
-            </div>
-
-
-            <div class="gameplay-features">
-                <h3>Features</h3>
-                <ul>
-                    <li>5v5 Battles against real opponents</li>
-                    <li>Multiple heroes with unique abilities</li>
-                    <li>Fast matchmaking</li>
-                    <li>Team strategies and tactics</li>
-                    <li>Stunning graphics and smooth controls</li>
-                </ul>
-            </div>
-        </div>
-        <h1>Battle Modes</h1>
-        <div class="boxes">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-
-
-        <!-- ******Heros******* -->
-        <h1 id="heros">Heros</h1>
-        <div class="heros cont">
-
-            <p>Mobile Legends: Bang Bang features over 100 heroes, each with unique abilities and roles. These heroes
-                are categorized into six main types, each fulfilling specific functions in the game.</p>
-            <h2>Types of Heroes</h2>
-
-            Tank:
-
-            Function: Tanks are durable front-line warriors designed to absorb damage and protect their team. They
-            usually have high health and defensive stats.
-            Examples: Tigreal, Akai, Johnson
-            Fighter:
-
-            Function: Fighters are versatile melee heroes that balance damage and durability. They can engage in
-            sustained fights and often deal significant damage while being able to take some hits.
-            Examples: Alucard, Balmond, Ruby
-            Assassin:
-
-            Function: Assassins specialize in dealing high burst damage to quickly eliminate key enemy targets. They
-            have high mobility but are typically less durable.
-            Examples: Fanny, Lancelot, Natalia
-            Marksman:
-
-            Function: Marksmen are ranged damage dealers who excel in dealing consistent physical damage from a
-            distance. They are crucial for taking down objectives and enemies but need protection due to their
-            fragility.
-            Examples: Layla, Ixia, Miya
-            Mage:
-
-            Function: Mages deal high burst magic damage and often have crowd control abilities. They are effective at
-            controlling fights and dealing damage from a distance but are usually fragile.
-            Examples: Eudora, Kagura, Alice
-            Support:
-
-            Function: Supports provide healing, buffs, and crowd control to aid their team. They play a crucial role in
-            sustaining the team and providing utility in fights.
-            Examples: Rafaela, Estes, Angela
-
-        </div>
-
 
         <!-- ******Tips******* -->
         <h1 id="tips">Tips</h1>
-        <div class="tips cont">
-            <h2>Tips for Success</h2>
-            <div class="tip">
+
+        <div class="tips">
+
+
+            <div class="box tip">
                 <h3>1. Team Composition Matters</h3>
                 <p>Build a balanced team with a mix of roles: Tank, Marksman, Mage, Assassin, Fighter, and Support. This
                     ensures you're prepared for different situations.</p>
             </div>
-            <div class="tip">
+            <div class="box tip">
                 <h3>2. Farm Efficiently</h3>
                 <p>Focus on farming early game to gain gold and experience. This will help you level up quickly and buy
                     essential items.</p>
             </div>
-            <div class="tip">
+            <div class="box tip">
                 <h3>3. Map Awareness</h3>
                 <p>Keep an eye on the minimap and be aware of enemy movements. Ward important areas to avoid ambushes
                     and secure objectives.</p>
             </div>
-            <div class="tip">
+            <div class="box tip">
                 <h3>4. Objectives Win Games</h3>
                 <p>Prioritize objectives like turrets, Turtle, and Lord. They provide significant advantages and can
                     turn the tide of battle.</p>
             </div>
-            <div class="tip">
+            <div class="box tip">
                 <h3>5. Communicate and Coordinate</h3>
                 <p>Use the in-game chat or voice commands to communicate with your team. Coordination is key to
                     executing successful team fights and strategies.</p>
@@ -203,45 +320,47 @@
 
 
 
-        <!-- ******Quiz******* -->
-        <h1 id="quiz">Quiz</h1>
-        <div class="quiz cont">
-            <div id="quiz">
-                <div id="question">Question will appear here</div>
-                <div id="options">
-                    <!-- Options will be dynamically generated by JavaScript -->
-                </div>
-                <div id="feedback"></div>
-                <div id="progress">Question x of 20</div>
-            </div>
-            <div id="results" style="display: none;">
-                <h2>Quiz Results</h2>
-                <p>You scored <span id="score">0</span> out of 20.</p>
-                <button onclick="restartQuiz()">Restart Quiz</button>
-            </div>
-
+        <!-- ******Gallery******* -->
+        <h1 id="gallery">Gallery</h1>
+        <div class="carousel-container">
+  <div class="carousel-view">
+    <button id="prev-btn" class="prev-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M436-39-6-480l442-442 109 110-332 332 332 332L436-39Z"/></svg>
+    </button>
+    <div id="item-list" class="item-list">
+         <img id="item" class="item" src="assests/assassin.webp"/>
+         <img id="item" class="item" src="assests/mage.webp"/>
+         <img id="item" class="item" src="assests/mm.webp"/>
+         <img id="item" class="item" src="assests/support.webp"/>
+         <img id="item" class="item" src="assests/tank.webp"/>
         </div>
+    <button id="next-btn" class="next-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-39 210-148l332-332-332-332 110-110 441 442L320-39Z"/></svg>
+        </button>
+    </div>
+</div>
+        
 
         <!-- ******About******* -->
         <h1 id="about">About
 
         </h1>
         <div class="about">
-            <div class="box abt">
+            <div class="box mini">
                 <h2>What is Mobile Legends: Bang Bang?</h2>
                 <p>Mobile Legends: Bang Bang is a multiplayer online battle arena (MOBA) game developed and published by
                     Moonton. It is available on both Android and iOS platforms and has gained immense popularity
                     worldwide.
                 </p>
             </div>
-            <div class="box abt">
+            <div class="box mini">
                 <h2>Gameplay and Features</h2>
                 <p>The game features intense 5v5 battles where players choose from a variety of heroes, each with unique
                     abilities and roles. Teams compete to destroy the enemy's base while defending their own.</p>
 
             </div>
 
-            <div class="box abt">
+            <div class="box mini">
 
                 <h2>About This Website</h2>
                 <p>This website is dedicated to providing information, guides, tips, and updates related to Mobile
@@ -252,7 +371,7 @@
                     strategies, we aim to cater to all your needs.</p>
             </div>
 
-            <div class="box abt">
+            <div class="box mini">
                 <h2>Developers</h2>
                 <p>Mobile Legends: Bang Bang was developed by Moonton, a game development studio based in Shanghai,
                     China.
@@ -284,7 +403,7 @@
                 <a href="#gameplay">Gameplay</a>
                 <a href="#heros">Heros</a>
                 <a href="#tips">Tips</a>
-                <a href="#quiz">Quiz</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#about">About</a>
             </div>
             <div class="link-box">
@@ -305,6 +424,8 @@
         <p> Disclaimer: This is a fan site and is not affiliated with or endorsed by Moonton.</p>
         <a href="#top" class="btt">Back to Top</a>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
